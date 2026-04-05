@@ -20,9 +20,17 @@ All AI processing and background segmentation capabilities are powered entirely 
 
 ## Requirements 🛠️
 
-- Python 3.10+
-- The dependencies listed in `requirements.txt`
-- (Recommended) CUDA Toolkit installed for GPU acceleration, making AI processing drastically faster.
+- **Python 3.10+** (Ensure you include Python `-dev` packages if on Linux)
+- **FFmpeg 4.4+** (CRITICAL: Must be installed on your system for video processing to work!)
+  - *Windows*: Download from [FFmpeg.org](https://ffmpeg.org/download.html) and add to your system PATH.
+  - *Mac*: `brew install ffmpeg`
+  - *Linux*: `sudo apt install ffmpeg`
+- **PyTorch**: While a basic version is in `requirements.txt`, for **GPU (CUDA) Support** (5-10x faster) you MUST install the correct PyTorch version mapping to your CUDA toolkit. See [PyTorch's Official Guide](https://pytorch.org/get-started/locally/).
+
+For example, to setup CUDA 11.8 on Windows:
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
 
 ## Quick Start (Running via Python) 🐍
 
@@ -63,4 +71,4 @@ You can build a standalone executable that you can run without opening Python or
 5. You can see a Before/After preview at the top of the app as files complete!
 
 ## License
-Feel free to fork, customize, and use this GUI. Please refer to the [backgroundremover license](https://github.com/nadermx/backgroundremover/blob/main/LICENSE) for rules regarding the AI engine usage.
+Feel free to fork, customize, and use this GUI. Please refer to the [backgroundremover license](https://github.com/nadermx/backgroundremover/blob/main/LICENSE.txt) for rules regarding the AI engine usage.
