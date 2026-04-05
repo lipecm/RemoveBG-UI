@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller build and distribution folders
+/build/
+/dist/
+*.spec
+*.exe
+
+# Log and text dumps
+error.txt
+br_help.txt
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE / Editor configuration
+.vscode/
+.idea/
+.claude/
+
+# Temporary models and downloads (backgroundremover downloads models usually in ~/.u2net, but just in case)
+*.pth
+*.zip

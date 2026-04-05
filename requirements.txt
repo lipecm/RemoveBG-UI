@@ -1,0 +1,7 @@
+CustomTkinter>=5.2.0
+backgroundremover>=0.2.2
+pillow>=10.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+pyinstaller>=6.0.0
